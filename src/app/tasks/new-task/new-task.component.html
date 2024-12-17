@@ -1,0 +1,19 @@
+<form (ngSubmit)="onSubmit(article.value, word.value, description.value)" #form>
+  <label for="word">Insert your new Word!</label>
+  <p class="form-group">
+    <select name="article" id="article" #article>
+      <option value="-">-</option>
+      <option value="der">der</option>
+      <option value="die">die</option>
+      <option value="das">das</option>
+    </select>
+    <input type="text" name="word" #word />
+  </p>
+  <label for="description">in Bulgarian</label>
+  <p class="form-group">
+    <textarea name="description" id="description" #description></textarea>
+  </p>
+  <p class="form-group">
+    <button>Insert Word</button>
+  </p>
+</form>

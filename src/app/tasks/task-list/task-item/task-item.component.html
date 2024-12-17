@@ -1,0 +1,11 @@
+<td>{{ task().id }}</td>
+<td>{{ " - " }}</td>
+<td>{{ task().article }}</td>
+
+<td>{{ task().word }}</td>
+
+<td>{{ " &rarr; " }}</td>
+
+<td>{{ task().description }}</td>
+
+<button (click)="onClick(task().id)">clear</button>

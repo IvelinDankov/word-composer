@@ -1,0 +1,11 @@
+<div class="task-list-box">
+  <table>
+    <ul class="task-list">
+      @for (task of tasks(); track task.id) {
+      <tr>
+        <app-task-item [task]="task" />
+      </tr>
+      }
+    </ul>
+  </table>
+</div>

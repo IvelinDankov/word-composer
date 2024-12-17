@@ -1,0 +1,22 @@
+tr,
+tbody {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+tr,
+td {
+  column-span: 0;
+  border: none;
+}
+
+tr td:not(:first-child) {
+  text-align: center;
+  margin-right: 2rem;
+}
+
+tr td:first-child {
+  margin-right: 1rem;
+  padding-left: 1rem;
+}
